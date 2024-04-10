@@ -25,8 +25,8 @@
 
 
   async function game() {
-    let startDate = new Date(2024, 4, 9);
-    let lastMinutes = 0 - Math.floor((Date.now() - startDate.getTime()) / (1000 * 60 * 2));
+    let startDate = new Date(2024, 4, 10);
+    let lastMinutes = 0 - Math.floor((new Date() - startDate) / (1000 * 60 * 2));
     console.log(lastMinutes)
 
     document.getElementById("wordNum").textContent = lastMinutes
