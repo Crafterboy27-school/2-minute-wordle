@@ -61,12 +61,12 @@
 
       let clickedKey = () => {
           if (keys[temp[1]][2] == true) {
-            showNotification("That letter is invalid!", "red", 1000)
+            showNotification("That letter is invalid!", "red", 2000)
 
             return
           }
           if (typeof (rows[curRow][1][curLetter]) == "undefined") {
-            showNotification("No more space for letters!", "red", 1000)
+            showNotification("No more space for letters!", "red", 2000)
             return
           }
           rows[curRow][1][curLetter][0].innerHTML = temp[1]
@@ -142,7 +142,7 @@
         return
       }
         if (!words.find(e => e.toUpperCase() == curWord)) {
-          showNotification("That isn't in this game's dictionary.", "red", 1000)
+          showNotification("That isn't in this game's dictionary.", "red", 2000)
           // return
         }
 
