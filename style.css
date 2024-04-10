@@ -1,0 +1,169 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: black;
+}
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  margin: 0;
+}
+
+h1 {
+  font-size: 5vmin;
+  text-align: center;
+  width: 100%;
+}
+
+.container {
+  background-color: #616161;
+  width: 80vw;
+
+  display: block;
+  margin: auto;
+  margin-top: 5vh;
+
+  height: fit-content;
+
+  border-radius: 5vmin;
+  padding: 2vmin;
+}
+
+.letter {
+  font-weight: bold;
+  font-size: 4vmin;
+  line-height: 4vmin;
+  text-align: center;
+  width: 4vmin;
+  height: 4vmin;
+  border-radius: 0.5vmin;
+  border: 0.6vmin solid white;
+  display: inline-block;
+  padding: 1vmin;
+  margin: 1vmin;
+  user-select: none;
+
+  background-color: #616161;
+}
+.letterSelected{
+  border: 1vmin solid black;
+}
+
+.row {
+  width: 100%;
+  height: 8vmin;
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+}
+
+#rows {
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 5vmin;
+  /* background-color: blue; */
+}
+
+#keyboard {
+  /* background-color: red; */
+
+  width: 100%;
+  height: fit-content;
+
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.key {
+  font-weight: bold;
+  font-size: 4vmin;
+  line-height: 4vmin;
+  text-align: center;
+  width: 4vmin;
+  height: 4vmin;
+  border-radius: 0.5vmin;
+  border: 2px solid white;
+  display: inline-block;
+  padding: 0.8vmin;
+  margin: 0.5vmin;
+  user-select: none;
+
+  transition: background-color 0.1s ease-in-out;
+
+  background-color: #616161;
+}
+
+.key:hover {
+  cursor: pointer;
+  background-color: #ababab;
+}
+
+.key:active {
+  background-color: #808080;
+}
+
+.fitContent {
+  width: fit-content !important;
+}
+
+
+
+
+
+.notification-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
+.notification {
+  background-color: #3333339a;
+  /* color: #fff; */
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+
+  font-size: 4vmin;
+
+  max-width: 25vw !important;
+
+  z-index: 10000000000;
+}
+
+.wrongSpot {
+  background-color: yellow;
+}
+
+.rightSpot {
+  background-color: lime;
+}
+
+h3 {
+  font-size: 3vmin;
+  text-align: center;
+}
+
+.note {
+  margin-top: 5vmin;
+  font-size: 2vmin;
+  text-align: center;
+  font-weight: italic;
+  color: yellow;
+
+  user-select: none;
+}
+
+.disabledKey {
+  /* background-color: #303030; */
+  opacity: 0.5;
+}
