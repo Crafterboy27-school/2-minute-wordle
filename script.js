@@ -25,7 +25,7 @@
 
 
   async function game() {
-    let startDate = new Date(2024, 4, 10);
+    let startDate = new Date(2024, 4, 14);
     let lastMinutes = 0 - Math.floor((new Date() - startDate) / (1000 * 60 * 2));
     console.log(lastMinutes)
 
