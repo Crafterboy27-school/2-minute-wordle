@@ -158,7 +158,7 @@
 
           } else {
             // This is commented out to disable used keys
-            //keys[rows[curRow][1][i][1]][0].classList.add("disabledKey")
+            keys[rows[curRow][1][i][1]][0].classList.add("disabledKey")
             //keys[rows[curRow][1][i][1]][2] = true
           }
 
