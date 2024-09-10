@@ -89,6 +89,8 @@
       keyboard.appendChild(temp[0])
     })
 
+    
+
     var curWord = ""
     const getCurWord = () => {
       curWord = ""
@@ -96,6 +98,12 @@
         curWord += rows[curRow][1][i][1]
       }
       return curWord
+    }
+
+    function didntGetIt(){
+      for (let i = 0; i < 5; i++) {
+        rows[curRow][1][i][0].classList.add("bozo")
+      }
     }
 
     let deleteKey = [document.createElement("span"), "Delete", false]
@@ -171,6 +179,7 @@
           showNotification("You got the word guessed correctly!", "lime", 10000)
         }
         if(curRow>=6){
+          didntGetIt()
           showNotification("The word was: "+word,"red",60*1000*5)  
         }
       }
@@ -181,6 +190,20 @@
         enterPress()
       }
     })
+
+    let giveupKey = [document.createElement("span"), "Give Up", false]
+    giveupKey[0].classList.add("key")
+    giveupKey[0].classList.add("fitContent")
+    giveupKey[0].innerHTML = "Give up"
+    keyboard.appendChild(giveupKey[0])
+
+    giveupKey[0].onclick = ()=>{
+      didntGetIt()
+      curRow = 100;
+      showNotification("The word was: "+word,"red",60*1000*5)
+
+
+    }
     
     for (let i = 0; i < 6; i++) {
       let row = [document.createElement("div"), []]
@@ -196,7 +219,6 @@
       rows.push(row)
       rowsEl.appendChild(row[0])
     }
-
 
 
   }
