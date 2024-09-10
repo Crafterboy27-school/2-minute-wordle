@@ -143,7 +143,7 @@
       }
         if (!words.find(e => e.toUpperCase() == curWord)) {
           showNotification("That isn't in this game's dictionary.", "red", 2000)
-          // return
+          return
         }
 
         let correct = 0
