@@ -181,22 +181,6 @@
         enterPress()
       }
     })
-
-    let giveupKey = [document.createElement("span"), "Give Up", false]
-    giveupKey[0].classList.add("key")
-    giveupKey[0].classList.add("fitContent")
-    giveupKey[0].innerHTML = "Give up"
-    keyboard.appendChild(giveupkey[0])
-
-    giveupkey[0].onclick = ()=>{
-      curRow = 100;
-        for (let i = 0; i < 5; i++) {
-          rows[curRow][1][i][0].classList.add("wrongSpot")
-      }
-      showNotification("The word was: "+word,"red",60*1000*5)
-
-
-    }
     
     for (let i = 0; i < 6; i++) {
       let row = [document.createElement("div"), []]
