@@ -179,7 +179,9 @@
           showNotification("You got the word guessed correctly!", "lime", 10000)
         }
         if(curRow>=6){
+          curRow--;
           didntGetIt()
+          curRow++;
           showNotification("The word was: "+word,"red",60*1000*5)  
         }
       }
