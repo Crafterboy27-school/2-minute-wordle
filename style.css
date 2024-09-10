@@ -165,5 +165,7 @@ h3 {
 
 .disabledKey {
   /* background-color: #303030; */
-  opacity: 0.5;
+/*   opacity: 0.5; */
+  color: red;
+  
 }
