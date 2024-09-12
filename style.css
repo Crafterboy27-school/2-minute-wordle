@@ -173,10 +173,10 @@ h3 {
   color: red;
   
 }
+.closeKey {
+  color: yellow;
+}
 
 .rightKey {
   color: lime;
-}
-.closeKey {
-  color: yellow;
 }
