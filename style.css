@@ -43,8 +43,8 @@ h1 {
   border-radius: 0.5vmin;
   border: 0.6vmin solid white;
   display: inline-block;
-  padding: 1vmin;
-  margin: 1vmin;
+  padding: 0.5vmin;
+  margin: 0.5vmin;
   user-select: none;
 
   background-color: #616161;
