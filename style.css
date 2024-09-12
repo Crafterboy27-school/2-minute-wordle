@@ -71,9 +71,12 @@ h1 {
 #keyboard {
   /* background-color: red; */
 
-  width: 100%;
+  width: fit-content;
   height: fit-content;
-
+  
+  display: block;
+  margin: auto;
+  
   /* display: flex; */
   /* justify-content: center; */
   /* align-items: center; */
@@ -81,11 +84,11 @@ h1 {
 
 .key {
   font-weight: bold;
-  font-size: 4vmin;
-  line-height: 4vmin;
+  font-size: 3vmin;
+  line-height: 3vmin;
   text-align: center;
-  width: 4vmin;
-  height: 4vmin;
+  width: 3vmin;
+  height: 3vmin;
   border-radius: 0.5vmin;
   border: 2px solid white;
   display: inline-block;
