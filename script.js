@@ -160,10 +160,12 @@
           if (word.includes(keyChar)&&keyChar!="") {
             rows[curRow][1][i][0].classList.add("wrongSpot")
             if (word[i] == rows[curRow][1][i][1]) {
+              keys[rows[curRow][1][i][1]][0].classList.add("rightKey")
+              
               correct++
               rows[curRow][1][i][0].classList.add("rightSpot")
             }
-
+            
           } else {
             // This is commented out to disable used keys
             keys[rows[curRow][1][i][1]][0].classList.add("disabledKey")
