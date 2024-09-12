@@ -159,6 +159,7 @@
           let keyChar = rows[curRow][1][i][1]
           if (word.includes(keyChar)&&keyChar!="") {
             rows[curRow][1][i][0].classList.add("wrongSpot")
+            keys[rows[curRow][1][i][1]][0].classList.add("closeKey")
             if (word[i] == rows[curRow][1][i][1]) {
               keys[rows[curRow][1][i][1]][0].classList.add("rightKey")
               
