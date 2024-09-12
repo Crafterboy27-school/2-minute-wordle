@@ -47,13 +47,18 @@
     let curRow = 0
     let curLetter = 0
 
-    var keyLetters = "QWERTYUIOPASDFGHJKLZXCVBNM"
+    var keyLetters = "QWERTYUIOP}ASDFGHJKL}ZXCVBNM}"
     var keys = {}
     var rows = []
 
 
 
     Array.from(keyLetters).forEach((e) => {
+      if(e=="}"){
+        let el = document.createElement("br")
+        keyboard.appendChild(el)
+        return;
+      }
       let temp = [document.createElement("span"), e, false]
       temp[0].classList.add("key")
       temp[0].innerHTML = e
