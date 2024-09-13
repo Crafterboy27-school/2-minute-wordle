@@ -2,7 +2,7 @@
   console.log("All the code in an IIFE :blehhh:")
 
   const searchParams = new URLSearchParams(window.location.search);
-  // let wordNum = Math.round(parseFloat(searchParams.get("word")))
+  let wordNum = Math.round(parseFloat(searchParams.get("word")))
   
   function showNotification(message, color = "white", duration = 1000) {
     // console.log('Showing notification:', message);
@@ -40,7 +40,7 @@
     words = await words.text()
     words = words.split("\n")
 
-    // if(!lastMinutes.isNaN(wordNum))lastMinutes = wordNum
+    if(!isNaN(wordNum))lastMinutes = wordNum
     let word = words[lastMinutes % words.length].toUpperCase()
     // console.log(word)
 
