@@ -41,7 +41,6 @@
     words = words.split("\n")
 
     let word = words[lastMinutes % words.length].toUpperCase()
-    alert(queryNumber)
     // console.log(word)
 
     let keyboard = document.getElementById("keyboard")
