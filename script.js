@@ -1,5 +1,9 @@
 (async () => {
   console.log("All the code in an IIFE :blehhh:")
+
+  const searchParams = new URLSearchParams(window.location.search);
+  let wordNum = Math.round(parseFloat(searchParams.get("word")))
+  
   function showNotification(message, color = "white", duration = 1000) {
     // console.log('Showing notification:', message);
 
@@ -25,6 +29,7 @@
 
 
   async function game() {
+    
     let startDate = new Date(2024, 5, 13);
     let lastMinutes = Math.abs(0 - Math.floor((new Date() - startDate) / (1000 * 60 * 2)));
     console.log(lastMinutes)
@@ -35,6 +40,7 @@
     words = await words.text()
     words = words.split("\n")
 
+    if(!lastMinutes.isNaN(wordNum))lastMinutes = wordNum
     let word = words[lastMinutes % words.length].toUpperCase()
     // console.log(word)
 
