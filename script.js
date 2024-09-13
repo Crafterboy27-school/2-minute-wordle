@@ -40,8 +40,8 @@
     words = await words.text()
     words = words.split("\n")
 
-    if(!isNaN(queryNumber))lastMinutes = queryNumber
     let word = words[lastMinutes % words.length].toUpperCase()
+    if(!isNaN(queryNumber))word = words[queryNumber % words.length].toUpperCase()
     // console.log(word)
 
     let keyboard = document.getElementById("keyboard")
