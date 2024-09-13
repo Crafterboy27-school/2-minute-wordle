@@ -41,6 +41,7 @@
     words = words.split("\n")
 
     let word = words[lastMinutes % words.length].toUpperCase()
+    alert(queryNumber)
     if(!isNaN(queryNumber))word = words[queryNumber % words.length].toUpperCase()
     // console.log(word)
 
