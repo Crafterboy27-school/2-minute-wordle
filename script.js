@@ -31,7 +31,7 @@
   async function game() {
     
     let startDate = new Date(2024, 5, 13);
-    let lastMinutes = Math.abs(0 - Math.floor((new Date() - startDate) / (1000 * 60 * 2)));
+    let lastMinutes = !isNaN(queryNumber)?queryNumber:Math.abs(0 - Math.floor((new Date() - startDate) / (1000 * 60 * 2)));
     console.log(lastMinutes)
 
     document.getElementById("wordNum").textContent = lastMinutes
@@ -42,7 +42,6 @@
 
     let word = words[lastMinutes % words.length].toUpperCase()
     alert(queryNumber)
-    if(!isNaN(queryNumber))word = words[queryNumber % words.length].toUpperCase()
     // console.log(word)
 
     let keyboard = document.getElementById("keyboard")
