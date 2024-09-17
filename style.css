@@ -20,12 +20,13 @@ h1 {
 }
 
 .container {
-  background-color: #616161;
+  /* background-color: #616161; */
+  border: white 10px solid;
   width: 80vw;
 
   display: block;
   margin: auto;
-  margin-top: 5vh;
+  margin-top: 2.5vh;
 
   height: fit-content;
 
@@ -47,10 +48,10 @@ h1 {
   margin: 0.5vmin;
   user-select: none;
 
-  background-color: #616161;
+  /* background-color: #616161; */
 }
 .letterSelected{
-  border: 1vmin solid black;
+  border: 1vmin solid rgb(133, 133, 133);
 }
 
 .row {
@@ -98,7 +99,7 @@ h1 {
 
   transition: background-color 0.1s ease-in-out;
 
-  background-color: #616161;
+  /* background-color: #616161; */
 }
 
 .key:hover {
