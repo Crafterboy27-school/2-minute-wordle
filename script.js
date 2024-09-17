@@ -190,8 +190,8 @@
 
         if (correct == 5) {
           showNotification("You got the word guessed correctly!", "lime", 10000)
-        }
-        if(curRow>=6){
+          curRow = 1000
+        }else if(curRow>=6){
           curRow--;
           didntGetIt()
           curRow++;
