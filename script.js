@@ -40,7 +40,7 @@
     words = await words.text()
     words = words.split("\n")
 
-    let word = words[lastMinutes % words.length].toUpperCase()
+    let word = words[Math.round(lastMinutes*94347+58) % words.length].toUpperCase()
     // console.log(word)
 
     let keyboard = document.getElementById("keyboard")
