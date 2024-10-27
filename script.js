@@ -38,7 +38,7 @@
 
     let words = await fetch("words.txt")
     words = await words.text()
-    words = words.split("\n")
+    words = words.split("\n").reverse()
 
     let word = words[Math.round(lastMinutes*94347+58) % words.length].toUpperCase()
     // console.log(word)
