@@ -30,7 +30,7 @@
 
   async function game() {
     
-    let startDate = 1;
+    let startDate = 1730055875;
     let lastMinutes = !isNaN(queryNumber)?queryNumber:Math.abs(0 - Math.floor((new Date() - startDate) / (1000 * 60 * 2)));
     console.log(lastMinutes)
 
